@@ -68,7 +68,7 @@ func downloadFromUrl(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-    fmt.Println("running..")
+    fmt.Println("running at UrIPAddress/backupnow..")
 	http.HandleFunc("/backupnow", downloadFromUrl)
 	http.ListenAndServe(":80", nil)
 }
